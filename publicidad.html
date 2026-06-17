@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Parcial 2</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="icon" type="image/png" href="img/favi.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Crafty+Girls&family=Spicy+Rice&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<header>
+
+    <div class="logo">
+    <a href="index.html">P!NK&PUNK</a>
+</div>
+
+    <div id="menu-toggle" class="menu-toggle">
+        ☰
+
+        <script>
+
+const menuToggle = document.getElementById("menu-toggle");
+const menu = document.getElementById("menu");
+
+menuToggle.addEventListener("click", () => {
+    menu.classList.toggle("active");
+});
+
+</script>
+    </div>
+
+    <nav id="menu">
+
+        <a href="index.html#sobre-mi">Sobre mí</a>
+<a href="portfolio.html">Portfolio</a>
+<a href="shop.html">Shop</a>
+<a href="index.html#ubicacion">Ubicación</a>
+<a href="index.html#contacto">Contacto</a>
+<a href="index.html#faq">FAQ</a>
+        
+
+    </nav>
+
+    <div class="cart">
+    <a href="carrito.html">
+        <i class="fa-solid fa-cart-shopping"></i>
+    </a>
+</div>
+
+</header>
+
+<main>
+
+    <section class="proyectos-editorial">
+
+    <section class="proyecto-detalle">
+
+        <h2>Fernet Branca</h2>
+
+        <p>
+            <strong>
+            Afiche publicitario inspirado en el universo visual del Fernet Branca,
+            explorando composición, identidad de marca y comunicación gráfica.
+            </strong>
+        </p>
+
+        <img
+            class="ilustracion-img"
+            src="img/Único Como Tu Percepción Del Mundo..jpg"
+            alt="Afiche Fernet Branca">
+
+    </section>
+
+</section>
+
+<div class="volver-portfolio">
+    <a href="portfolio.html">← Volver al Portfolio</a>
+</div>
+
+<a href="#" class="back-to-top">
+    <img src="img/favi.png" alt="Volver arriba">
+</a>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const menuToggle = document.getElementById("menu-toggle");
+    const menu = document.getElementById("menu");
+
+    menuToggle.addEventListener("click", () => {
+        menu.classList.toggle("active");
+    });
+});
+</script>
+
+</main>
+
+<footer>
+
+    <p>
+        COPYRIGHT © 2026 P!NK&PUNK by Maria Indaco
+    </p>
+
+</footer>

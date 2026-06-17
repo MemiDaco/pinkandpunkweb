@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Parcial 2</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="icon" type="image/png" href="img/favi.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Crafty+Girls&family=Spicy+Rice&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+
+<header>
+
+    <div class="logo">
+    <a href="index.html">P!NK&PUNK</a>
+</div>
+
+    <div id="menu-toggle" class="menu-toggle">
+        ☰
+
+        <script>
+
+const menuToggle = document.getElementById("menu-toggle");
+const menu = document.getElementById("menu");
+
+menuToggle.addEventListener("click", () => {
+    menu.classList.toggle("active");
+});
+
+</script>
+    </div>
+
+    <nav id="menu">
+
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="shop.html">Shop</a>
+        <a href="#ubicacion">Ubicación</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#faq">FAQ</a>
+        
+
+    </nav>
+
+    <div class="cart">
+    <a href="carrito.html">
+        <i class="fa-solid fa-cart-shopping"></i>
+    </a>
+</div>
+
+</header>
+
+<main>
+
+    <section class="hero">
+
+    <div class="hero-text">
+
+    <h1>P!NK&PUNK</h1>
+
+    <h2>
+    by Maria Indaco
+</h2>
+
+        
+
+        <p>
+            <strong>Branding · Diseño Editorial · Ilustración</strong>
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="portfolio.html">
+                Ver Portfolio
+            </a>
+
+            <a href="shop.html">
+                Ir al Shop
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="hero-image">
+
+        <img src="img/Perfil 25.png" alt="María Indaco">
+
+    </div>
+
+</section>
+
+
+<section class="intro-frase">
+
+    <h3><em>No seguís las tendencias, eso te hace tan vos</em></h3>
+
+
+</section>
+
+
+    <section id="sobre-mi">
+
+        <h2>Sobre mí</h2>
+       
+        <p>
+           <br><strong>Estudiante de Diseño Gráfico en Escuela Da Vinci.
+            <br>Me apasiona crear piezas visuales con personalidad,
+            explorando ilustración, branding y diseño editorial.
+        <br>El diseño es mi forma de transformar ideas, emociones y experiencias en algo que pueda verse, sentirse y recordarse.</strong>
+        </p>
+
+    </section>
+
+    <section class="spotify">
+
+    <h2>Mi soundtrack creativo</h2>
+
+    <p>
+        <strong>La música es una parte fundamental de mi proceso creativo, entre punk, pop y un poco de caos. <br>Esta playlist reúne algunas de las canciones que me acompañan mientras diseño, ilustro y desarrollo nuevas ideas.</strong>
+    </p>
+
+    <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/0mGh7xn7EeZTJkzdtwPyLg?utm_source=generator&si=4b82ec7b87794e06" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+</section>
+
+    <section id="ubicacion">
+
+    <h2>Ubicación</h2>
+
+    <div class="mapa">
+     
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47623.750297991304!2d-58.56978957316969!3d-34.47442102919468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb03cd891437f%3A0xab3b49e671350275!2sSan%20Isidro%2C%20Provincia%20de%20Buenos%20Aires!5e1!3m2!1ses-419!2sar!4v1781361308586!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+</section>
+    
+    <section class="contacto-faq">
+
+    <div class="contacto-box" id="contacto">
+
+        <h2>Contacto</h2>
+
+        <form>
+
+            <input
+                type="text"
+                name="nombre"
+                placeholder="Nombre"
+            >
+
+            <input
+                type="email"
+                name="correo"
+                placeholder="Correo"
+            >
+
+            <textarea
+                name="mensaje"
+                placeholder="Mensaje">
+            </textarea>
+
+            <button type="submit">
+                Enviar
+            </button>
+
+        </form>
+
+    </div>
+
+    <div class="faq-box" id="faq">
+
+        <h2>Preguntas Frecuentes</h2>
+
+        <div class="faq-item">
+            <details class="faq-item">
+
+    <summary><strong>¿Trabajás freelance?</strong></summary>
+
+    <p>
+        Sí, realizo proyectos freelance de branding, diseño editorial, ilustración y comunicación visual.
+    </p>
+
+</details>
+
+        <details class="faq-item">
+
+    <summary><strong>¿Qué programas utilizás?</strong></summary>
+
+    <p>
+        Adobe Illustrator, Photoshop, InDesign, After Effects y Visual Studio Code.
+    </p>
+
+</details>
+
+        <details class="faq-item">
+
+    <summary><strong>¿Realizás branding?</strong></summary>
+
+    <p>
+        Sí, desarrollo identidades visuales, logotipos, piezas gráficas y sistemas de marca.
+    </p>
+
+</details>
+
+    </div>
+
+</section>
+
+</main>
+
+<footer>
+
+    <p>
+        COPYRIGHT © 2026 P!NK&PUNK by Maria Indaco
+    </p>
+
+</footer>
+<script>
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const menuToggle = document.getElementById("menu-toggle");
+    const menu = document.getElementById("menu");
+
+    menuToggle.addEventListener("click", () => {
+        menu.classList.toggle("active");
+    });
+
+});
+
+</script>
+
+<a href="#" class="back-to-top">
+    <img src="img/favi.png" alt="Volver arriba">
+</a>
+
+</body>

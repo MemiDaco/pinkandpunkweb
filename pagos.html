@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pago | P!NK&PUNK</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="img/favi.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body id="top">
+
+<header>
+
+    <div class="logo">
+        <a href="index.html">P!NK&PUNK</a>
+    </div>
+
+    <div id="menu-toggle" class="menu-toggle">☰</div>
+
+    <nav id="menu">
+        <a href="index.html#sobre-mi">Sobre mí</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="shop.html">Shop</a>
+        <a href="index.html#ubicacion">Ubicación</a>
+        <a href="index.html#contacto">Contacto</a>
+        <a href="index.html#faq">FAQ</a>
+    </nav>
+
+   <div class="cart">
+    <a href="carrito.html">
+        <i class="fa-solid fa-cart-shopping"></i>
+    </a>
+</div>
+
+</header>
+
+<main>
+
+    <section class="portfolio-hero">
+
+        <h1>Pago</h1>
+
+        <p>
+            <strong>Elegí un método de pago y revisá el total de tu compra.</strong>
+        </p>
+
+    </section>
+
+    <section class="pago-section">
+
+        <div class="pago-box">
+
+            <h2>Método de pago</h2>
+
+            <div class="metodos-pago">
+
+<label>
+    <input type="radio" name="metodo" checked>
+    Tarjeta de crédito
+</label>
+
+<label>
+    <input type="radio" name="metodo">
+    Tarjeta de débito
+</label>
+
+<label>
+    <input type="radio" name="metodo">
+    Mercado Pago
+</label>
+
+<label>
+    <input type="radio" name="metodo">
+    Transferencia bancaria
+</label>
+
+            </div>
+
+            <form class="checkout-form">
+
+                <label>Nombre del titular</label>
+                <input type="text" name="titular" placeholder="María Indaco">
+
+                <label>Número de tarjeta</label>
+
+   <input
+    type="text"
+    name="tarjeta"
+    placeholder="0000 0000 0000 0000"
+    class="input-error">
+
+    <p class="mensaje-error">
+    Mensaje de error mostrado cuando los datos ingresados son incorrectos.
+</p>
+
+
+                
+                <label>Vencimiento</label>
+                <input type="text" name="vencimiento" placeholder="MM/AA">
+
+                <label>Código de seguridad</label>
+                <input type="text" name="codigo" placeholder="123">
+
+            </form>
+
+        </div>
+
+        <div class="pago-resumen">
+
+            <h2>Resumen</h2>
+
+            <div class="resumen-linea">
+                <span>Subtotal</span>
+                <strong>$30.000</strong>
+            </div>
+
+            <div class="resumen-linea">
+                <span>Envío</span>
+                <strong>$2.500</strong>
+            </div>
+
+            <div class="resumen-linea total">
+                <span>Total</span>
+                <strong>$32.500</strong>
+            </div>
+
+            <a href="pedidos.html" class="btn-proyecto">
+                Confirmar compra
+            </a>
+
+        </div>
+
+    </section>
+
+</main>
+
+<a href="#top" class="back-to-top">
+    <img src="img/favi.png" alt="Volver arriba">
+</a>
+
+<footer>
+    <p>
+        COPYRIGHT © 2026 P!NK&PUNK by Maria Indaco
+    </p>
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const menuToggle = document.getElementById("menu-toggle");
+    const menu = document.getElementById("menu");
+
+    menuToggle.addEventListener("click", () => {
+        menu.classList.toggle("active");
+    });
+});
+</script>
+
+</body>
+</html>

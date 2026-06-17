@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | P!NK&PUNK</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="img/favi.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body id="top">
+
+<header>
+
+    <div class="logo">
+        <a href="index.html">P!NK&PUNK</a>
+    </div>
+
+    <div id="menu-toggle" class="menu-toggle">☰</div>
+
+    <nav id="menu">
+        <a href="index.html#sobre-mi">Sobre mí</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="shop.html">Shop</a>
+        <a href="index.html#ubicacion">Ubicación</a>
+        <a href="index.html#contacto">Contacto</a>
+        <a href="index.html#faq">FAQ</a>
+    </nav>
+
+    <div class="cart">
+    <a href="carrito.html">
+        <i class="fa-solid fa-cart-shopping"></i>
+    </a>
+</div>
+
+</header>
+
+<main>
+
+    <section class="portfolio-hero">
+
+        <h1>Datos personales</h1>
+
+        <p>
+            <strong>Completá tus datos para continuar con la compra.</strong>
+        </p>
+
+    </section>
+
+    <section class="checkout-section">
+
+        <form class="checkout-form">
+
+            <label>Nombre completo</label>
+            <input type="text" name="nombre" placeholder="María Indaco">
+
+            <label>Correo electrónico</label>
+            <input type="email" name="correo" placeholder="mail@ejemplo.com">
+
+            <label>Teléfono</label>
+            <input type="tel" name="telefono" placeholder="+54 11 0000 0000">
+
+            <label>Dirección</label>
+            <input type="text" name="direccion" placeholder="Calle, número, piso/depto">
+
+            <label>Ciudad</label>
+            <input type="text" name="ciudad" placeholder="Buenos Aires">
+
+            <label>Código postal</label>
+            <input type="text" name="codigo-postal" placeholder="1642">
+
+            <a href="pagos.html" class="btn-proyecto">
+                Continuar al pago
+            </a>
+
+        </form>
+
+    </section>
+
+</main>
+
+<a href="#top" class="back-to-top">
+    <img src="img/favi.png" alt="Volver arriba">
+</a>
+
+<footer>
+    <p>
+        COPYRIGHT © 2026 P!NK&PUNK by Maria Indaco
+    </p>
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const menuToggle = document.getElementById("menu-toggle");
+    const menu = document.getElementById("menu");
+
+    menuToggle.addEventListener("click", () => {
+        menu.classList.toggle("active");
+    });
+});
+</script>
+
+</body>
+</html>
